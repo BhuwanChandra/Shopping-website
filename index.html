@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Meteor Goods</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.8.1/css/all.css"
+    />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <header>
+      <div
+        class="custom-nav-container d-flex align-items-center justify-content-between px-2 py-3 shadow-sm"
+      >
+        <a href="#" class="text-clipped navbar-brand">
+          <i class="fal fa-meteor d-flex">
+            <span class="m-auto">Meteor</span>
+          </i>
+        </a>
+
+        <div class="main-nav-outer d-flex">
+          <i class="fal fa-times text-clipped menu-close-icon d-lg-none"></i>
+
+          <nav
+            class="main-nav navbar navbar-light navbar-expand-lg text-center m-auto"
+          >
+            <ul class="navbar-nav d-flex">
+              <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Men</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Women</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Kids</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">New arrivals</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Sale</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="nav-icons-container d-flex justify-content-between">
+          <div class="nav-icons">
+            <a href="#" >
+              <i class="fal fa-search text-clipped"></i>
+            </a>
+          </div>
+          <div class="nav-icons">
+            <a href="#" >
+              <i class="fal fa-shopping-bag text-clipped bag-item-count text-clipped"></i>
+              <span class="badge">2</span>
+            </a>
+          </div>
+          <div class="nav-icons">
+              <div class="dropdown">
+                <a href="#" class=" dropdown-toggle" data-toggle="dropdown">
+                    <i class="fal fa-user text-clipped"></i>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <form action="" class="p-2 text-secondary">
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Enter email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" placeholder="Enter password" required>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="dropdown-checkbox">
+                            <label for="dropdown-checkbox" class="form-check-label">Remember me</label>
+                        </div>
+                        <button type="submit" class="btn btn-bg my-2">Login</button>
+                    </form>
+                    <div class="dropdown-divider mt-0"></div>
+                        <a href="#" class="dropdown-item">Don't have an account? Sign up</a>
+                        <a href="#" class="dropdown-item">Forgot password? Reset now</a>
+                </div>
+              </div>
+          </div>
+          <div class="nav-icons d-lg-none">
+              <i class="fal fa-bars open-menu-icon text-clipped"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="promotions text-white text-center py-2 mb-5">
+        <span>
+          <span class="text-uppercase font-weight-bold">Free Shipping</span> on orders of $150 or more!
+        </span>
+      </div>
+
+      <div class="container">
+        <div class="carousel slide" id="carousel-indicators" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li class="active" data-target="#carousel-indicators" data-slide-to="0"></li>
+            <li  data-target="#carousel-indicators" data-slide-to="1"></li>
+            <li  data-target="#carousel-indicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <a href="#">
+                <img src="images/carousel/carousel-img-1-mobile.jpeg" class="img-fluid d-lg-none" alt="">
+                <img src="images/carousel/carousel-img-1.jpeg" class="img-fluid d-none d-lg-block" alt="">
+              </a>
+          </div>
+            <div class="carousel-item">
+              <a href="#">
+                <img src="images/carousel/carousel-img-2-mobile.jpg" class="img-fluid d-lg-none" alt="">
+                <img src="images/carousel/carousel-img-2.jpg" class="img-fluid d-none d-lg-block" alt="">
+              </a>
+            </div>
+            <div class="carousel-item">
+              <a href="#">
+                <img src="images/carousel/carousel-img-3-mobile.jpeg" class="img-fluid d-lg-none" alt="">
+                <img src="images/carousel/carousel-img-3.jpeg" class="img-fluid d-none d-lg-block" alt="">
+              </a>
+              </div>
+            </div>
+          <a href="#carousel-indicators" class="carousel-control-prev" role="button" data-slide="prev">
+            <i class="fal fa-chevron-left text-clipped"></i>
+          </a>
+          <a href="#carousel-indicators" class="carousel-control-next" role="button" data-slide="next">
+            <i class="fal fa-chevron-right text-clipped"></i>
+          </a>
+        </div>
+
+      </div>
+
+
+    </header>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="main.js"></script>
+  </body>
+</html>
