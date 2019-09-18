@@ -323,3 +323,41 @@ footer{
     border-top-color: rgba(255, 255, 255, .1);
 }
 
+
+
+
+
+
+.heading-has-bg{
+    background: linear-gradient(to left, rgba(35, 213,227,.7), rgba(145,73,185,.7)), url("images/hero/heading-img.jpeg") center no-repeat;
+    background-size: cover;
+    height: 30vh;
+}
+
+.heading-has-bg h1{
+    font-family: fantasy;
+    font-size: 50px;
+    color: #fff;
+    text-shadow: 0 0.625rem 1.5rem rgba(0,0,0,.4);
+}
+
+.cart-item-container{
+    position: relative;
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+}
+
+.cart-item-img{
+    max-width: 350px;
+}
+
+.remove-cart-item{
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(220,53,69,.5);
+}
+
